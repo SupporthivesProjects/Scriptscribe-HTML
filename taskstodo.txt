@@ -3,3 +3,12 @@ https://www.figma.com/design/ofbPbas5SDl5oHGsa8vwez/AD494---Reskin--Content----S
 ScriptScribe
 Start date : 10th May 2025
 Vijay and team
+
+
+1 Rahul- our servies, dashboard page (dashboard,MyAddress,My Order,My Account), checkout page,  all modal
+2 Saakshi- join us, Login-Register page, order-successful, Order Unsuccessful, email-template , all modal 
+3 Dhiraj- aboutus, Order-Select Content, orders details, cart page, all modal 
+4 Vijay - header module,footer module,tc page,pp page, home page, error page,contactus page, all modal 
+
+
+Note:- Hello friends this  project all devices should be responsive and check end to end
