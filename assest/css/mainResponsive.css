@@ -604,6 +604,24 @@
         align-items: flex-start;
         padding: 60px 0px 0px;
     }
+    .contactus-bg {
+        /* background: url(../images/contact-bg-hero-two.png) no-repeat; */
+        background: var(--Primary, #172254);
+        background-position: center center;
+        background-size: cover;
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+    .contacus-video {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        width: 375px;
+        height: 341px;
+        clip-path: polygon(0 0, 100% 36%, 100% 100%, 0% 100%);
+        margin-top: 4rem;
+    }
     .contactus-bg-form-main {
         padding: 24px 10px;
         background: url(../images/Contact-us.png) no-repeat;
@@ -614,7 +632,19 @@
         width: 638px;
         max-width: 100%;
         margin-left: 0px;
-        padding: 40px 12px;
+        padding: 40px 12px 0px;
+    }
+    .contactus-bg::after {
+        content: "";
+        background: url(../images/home-bottom-img.png) no-repeat;
+        background-position: center center;
+        position: absolute;
+        bottom: -21px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+        width: 100%;
+        background-size: 100%;
     }
     .contactleft-content h1 {
         color: var(--Neutral-White, #FFF);

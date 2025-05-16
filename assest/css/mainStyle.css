@@ -261,7 +261,30 @@ header .navbar{
   .color-header{
     background: var(--Primary, #172254);
   }
-
+.nav-item-mo{
+    position: relative;
+}
+.nav-item-mo .count-cart-item{
+    color: var(--Grey-100, #FFF);
+    text-align: center;
+    font-family: Sen;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    background: #3DB1FF;
+    width: 15px;
+    height: 15px;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    right: -8px;
+}
 /* -----------------------home------------------- */
 .home-content-center{
     width: 784px;
@@ -473,6 +496,7 @@ header .navbar{
     justify-content: center;
     align-items: center;
 }
+
 /*  --------------------newslider------------------------*/
 .slick-slider {
     margin-left: -12%;
@@ -1042,6 +1066,40 @@ header .navbar{
     justify-content: center;
     align-items: center;
 }
+.contactus-bg{
+    background: url(../images/contact-bg-hero-two.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 577px;
+
+}
+.contactus-bg::after {
+    content: "";
+    background: url(../images/home-bottom-img.png) no-repeat;
+    background-position: center center;
+    position: absolute;
+    bottom: -1px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+}
+
+.contacus-video {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 921px;
+    height: 577px;
+    clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
+}
+.contacus-video video{
+    width: 920px;
+    max-width: 100%;
+    float: right;
+    height: 580px;
+    object-fit: cover;
+}
+
 .contactus-bg-form-main{
     padding: 64px 0px;
 }
@@ -1736,6 +1794,25 @@ header .navbar{
     .about-aim-01 {
         margin-top: -8rem;
     }
+    .contactus-bg {
+        background: url(../images/contact-bg-hero-two.png) no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: auto;
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+    .contacus-video {
+        position: relative;
+        right: 0px;
+        top: 0px;
+        width: 921px;
+        height: 505px;
+        clip-path: polygon(0 0, 100% 36%, 100% 100%, 0% 100%);
+        margin-top: 4rem;
+    }
+    
+    
     
 }
 @media only screen and (min-width: 900px) and (max-width:960px) {
@@ -1962,6 +2039,35 @@ header .navbar{
     .about-aim-01 {
         margin-top: -3rem;
     }
+    .contactus-bg {
+        height: 580px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacus-video {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 455px;
+        height: 593px;
+        clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .contactus-bg::after {
+        content: "";
+        background: url(../images/home-bottom-img.png) no-repeat;
+        background-position: center center;
+        position: absolute;
+        bottom: -2px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+    }
+    .contactleft-content {
+        width: 638px;
+        max-width: 100%;
+        margin-left: 2px;
+    }
     
 }
 @media only screen and (min-width: 1000px) and (max-width:1080px) {
@@ -2055,10 +2161,33 @@ header .navbar{
         margin-top: -1px;
     }
     .contactus-bg {
-        height: 531px;
+        height: 580px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .contacus-video {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 455px;
+        height: 593px;
+        clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .contactus-bg::after {
+        content: "";
+        background: url(../images/home-bottom-img.png) no-repeat;
+        background-position: center center;
+        position: absolute;
+        bottom: -2px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+    }
+    .contactleft-content {
+        width: 638px;
+        max-width: 100%;
+        margin-left: 2px;
     }
     .about-aim-01 .container {
         height: 526px;
@@ -2184,10 +2313,33 @@ header .navbar{
         margin-top: -1px;
     }
     .contactus-bg {
-        height: 531px;
+        height: 580px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .contacus-video {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 540px;
+        height: 593px;
+        clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .contactus-bg::after {
+        content: "";
+        background: url(../images/home-bottom-img.png) no-repeat;
+        background-position: center center;
+        position: absolute;
+        bottom: -2px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+    }
+    .contactleft-content {
+        width: 638px;
+        max-width: 100%;
+        margin-left: 2px;
     }
     .about-aim-01 .container {
         height: 526px;
@@ -2309,10 +2461,31 @@ header .navbar{
         margin-top: -1px;
     }
     .contactus-bg {
-        height: 609px;
+        height: 580px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .contactleft-content {
+        margin-left: 0px;
+    }
+    .contacus-video {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 677px;
+        height: 593px;
+        clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .contactus-bg::after {
+        content: "";
+        background: url(../images/home-bottom-img.png) no-repeat;
+        background-position: center center;
+        position: absolute;
+        bottom: -2px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
     }
     .about-aim-01 .container {
         height: 526px;
@@ -2428,10 +2601,33 @@ header .navbar{
         font-size: 16px;
     }
     .contactus-bg {
-        height: 609px;
+        height: 580px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .contactleft-content {
+        width: 638px;
+        max-width: 100%;
+        margin-left: 0px;
+    }
+    .contacus-video {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 677px;
+        height: 593px;
+        clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .contactus-bg::after {
+        content: "";
+        background: url(../images/home-bottom-img.png) no-repeat;
+        background-position: center center;
+        position: absolute;
+        bottom: -2px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
     }
     .about-aim-01::before {
         content: "";
@@ -2528,10 +2724,18 @@ header .navbar{
         padding: 0px 24px;
     }
     .contactus-bg {
-        height: 609px;
+        height: 580px;
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .contacus-video {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 677px;
+        height: 593px;
+        clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
     }
     .about-aim-01::before {
         content: "";
@@ -2753,8 +2957,32 @@ header .navbar{
         height: 1059px;
         z-index: -1;
     }
+    .contactus-bg::after {
+        content: "";
+        background: url(../images/home-bottom-img.png) no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 2200px) and (max-width:4400px) {
+    .contactus-bg::after {
+        content: "";
+        background: url(../images/home-bottom-img.png) no-repeat;
+        background-size: 100%;
+        background-position: center center;
+        position: absolute;
+        bottom: -1px;
+        left: 0px;
+        right: 0px;
+        height: 50px;
+        width: 100%;
+    }
     body{
         background-color: #F9F9F9;
     }
