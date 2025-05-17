@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scriptscribe</title>
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assest/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assest/css/owl.theme.default.css">
+    <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assest/css/aos.css">
+    <link rel="stylesheet" href="./assest/css/mainStyle.css">
+    <link rel="stylesheet" href="./assest/css/rstyle.css">
+    <link rel="stylesheet" href="./assest/css/mainResponsive.css">
+    <style>
+        header {
+            background: var(--Primary, #172254);
+        }
+
+        .nav-link.active {
+            color: #fff !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="color-bg-mo">
+                    <a class="navbar-brand" href="#">
+                        <img src="./assest/images/Logo.svg" alt="" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="./assest/images/Menu-Button.svg" class="navbar-toggler-icon img-fluid" alt="">
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Order Content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Write for us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex menu-right-side">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    $USD
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">USD $</a></li>
+                                    <li><a class="dropdown-item" href="#">USD $</a></li>
+                                    <li><a class="dropdown-item" href="#">USD $</a></li>
+                                    <li><a class="dropdown-item" href="#">USD $</a></li>
+                                    <li><a class="dropdown-item" href="#">USD $</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item-mo">
+                                <a class="nav-link cart-btn px-0" href="#">
+                                    <img src="./assest/images/shopping-cart.svg" alt="" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="nav-item nav-item-mo">
+                                <a class="nav-link user-btn px-0" href="#">
+                                    <img src="./assest/images/user.svg" alt="" class="img-fluid">
+                                </a>
+                            </li>
+                            <div class="d-lg-none d-md-block d-block">
+                                <li class="nav-item nav-item-de">
+                                    <a class="nav-link user-btn px-0" href="#">
+                                        <img src="./assest/images/dark-user.svg" alt="" class="img-fluid">
+                                        Login/Register
+                                    </a>
+                                </li>
+                                <li class="nav-item nav-item-de">
+                                    <a class="nav-link cart-btn px-0" href="#">
+                                        <img src="./assest/images/light-shopping-cart.svg" alt="" class="img-fluid">
+                                        Cart
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End -->
+
+    <!-- Section 1 start -->
+    <section class="dash_s1">
+        <div class="container dash_c1">
+            <div class="dash_top">
+                <div class="d_titlebar">
+                    <h1 class="dash_title d-block" id="id_one">Dashboard</h1>
+                    <h1 class="dash_title" id="id_two">My Orders</h1>
+                    <h1 class="dash_title" id="id_three">My Addressess</h1>
+                    <h1 class="dash_title" id="id_four">My Account</h1>
+                </div>
+                <p class="dash_subtitle">Not test guy? <a class="logout_link">Log out</a></p>
+            </div>
+            <div class="dash_bottom">
+                <div class="d-block d-md-none w-100">
+                    <select class="form-select tab_drop" id="mobileTabSelector" onchange="switchTab(this.value)">
+                      <option value="#v-pills-dashboard">DASHBOARD</option>
+                      <option value="#v-pills-order">MY ORDERS</option>
+                      <option value="#v-pills-address">MY ADDRESSESS</option>
+                      <option value="#v-pills-account">MY ACCOUNT</option>
+                    </select>
+                  </div>
+                <div class="tab_btnbar mobile_none">
+                    <div class="pp-navigation account_navigation">
+                        <div class="nav flex-column pp-navigation tab_allign nav-pills" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical" data-aos="fade-up">
+                            <ul class="nav nav-pills dashboard_tab_list" id="pills-tab" role="tablist">
+                                <li class="nav-item map-point-sm" role="presentation ">
+                                    <button class="nav-link tab_button active" id="v-pills-dashboard-tab"
+                                        data-bs-toggle="pill" onclick="changer(1)" data-bs-target="#v-pills-dashboard"
+                                        type="button" role="tab" aria-controls="v-pills-dashboard"
+                                        aria-selected="true">DASHBOARD</button>
+                                </li>
+                                <li class="nav-item map-point-sm" role="presentation">
+                                    <button class="nav-link tab_button" id="v-pills-order-tab" data-bs-toggle="pill"
+                                        onclick="changer(2)" data-bs-target="#v-pills-order" type="button" role="tab"
+                                        aria-controls="v-pills-order" aria-selected="false">MY&nbsp;ORDERS</button>
+                                </li>
+                                <li class="nav-item map-point-sm" role="presentation">
+                                    <button class="nav-link tab_button" id="v-pills-address-tab" data-bs-toggle="pill"
+                                        onclick="changer(3)" data-bs-target="#v-pills-address" type="button" role="tab"
+                                        aria-controls="v-pills-address"
+                                        aria-selected="false">MY&nbsp;ADDRESSESS</button>
+                                </li>
+                                <li class="nav-item map-point-sm" role="presentation">
+                                    <button class="nav-link tab_button" id="v-pills-account-tab" data-bs-toggle="pill"
+                                        onclick="changer(4)" data-bs-target="#v-pills-account" type="button" role="tab"
+                                        aria-controls="v-pills-account" aria-selected="false">MY&nbsp;ACCOUNT</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab_contentbar w-100">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <!-- Dashboard -->
+                        <div class="tab-pane tab_data fade show active" id="v-pills-dashboard" role="tabpanel"
+                            aria-labelledby="v-pills-dashboard-tab">
+                            <div class="dashboard_body">
+                                <h3 class="dash_bodytitle">Hello test guy</h3>
+                                <P class="dash_bodysubtitle">From your account dashboard you can view your recent
+                                    orders, manage your shipping and billing addresses, and edit your password and
+                                    account details.</P>
+                            </div>
+                        </div>
+
+                        <!-- Order -->
+                        <div class="tab-pane tab_data fade" id="v-pills-order" role="tabpanel"
+                            aria-labelledby="v-pills-order-tab">
+                            <div class="order_body">
+                                <div class="mobile_none w-100">
+                                    <div class="table-responsive d-flex w-100">
+                                        <table class="table table-borderless mb-0 order_tablemain">
+                                            <thead class="account_table_header">
+                                                <tr>
+                                                    <th scope="col">
+                                                        <p class="table_head_text">Order</p>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <p class="table_head_text">Date</p>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <p class="table_head_text">Quantity</p>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <p class="table_head_text">Total</p>
+                                                    </th>
+                                                    <th scope="col">
+                                                        <p class="table_head_text"></p>
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="account_table_body">
+                                                <tr>
+                                                    <td>
+                                                        <p class="table_body_text">E-Book Content</p>
+                                                        <p class="table_titledetail">Turnaround: &nbsp;&nbsp;&nbsp;6 days
+                                                        </p>
+                                                        <p class="table_titledetail">Quality:
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premium</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">11.10.2020</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">1</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">£125.00</p>
+                                                    </td>
+                                                    <td class="view_order"><button type="button"
+                                                            class="btn order_tablebtn">View order</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="table_body_text">E-Book Content</p>
+                                                        <p class="table_titledetail">Turnaround: &nbsp;&nbsp;&nbsp;6 days
+                                                        </p>
+                                                        <p class="table_titledetail">Quality:
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premium</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">11.10.2020</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">1</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">£125.00</p>
+                                                    </td>
+                                                    <td class="view_order"><button type="button"
+                                                            class="btn order_tablebtn">View order</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="table_body_text">E-Book Content</p>
+                                                        <p class="table_titledetail">Turnaround: &nbsp;&nbsp;&nbsp;6 days
+                                                        </p>
+                                                        <p class="table_titledetail">Quality:
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premium</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">11.10.2020</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">1</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">£125.00</p>
+                                                    </td>
+                                                    <td class="view_order"><button type="button"
+                                                            class="btn order_tablebtn">View order</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="table_body_text">E-Book Content</p>
+                                                        <p class="table_titledetail">Turnaround: &nbsp;&nbsp;&nbsp;6 days
+                                                        </p>
+                                                        <p class="table_titledetail">Quality:
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premium</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">11.10.2020</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">1</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">£125.00</p>
+                                                    </td>
+                                                    <td class="view_order"><button type="button"
+                                                            class="btn order_tablebtn">View order</button></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <p class="table_body_text">E-Book Content</p>
+                                                        <p class="table_titledetail">Turnaround: &nbsp;&nbsp;&nbsp;6 days
+                                                        </p>
+                                                        <p class="table_titledetail">Quality:
+                                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premium</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">11.10.2020</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">1</p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="table_body_text">£125.00</p>
+                                                    </td>
+                                                    <td class="view_order"><button type="button"
+                                                            class="btn order_tablebtn">View order</button></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="desktop_none w-100">
+                                    <div class="mobile_ordermain">
+                                        <div class="order_cardmob">
+                                            <p class="table_head_text">Order</p>
+                                            <p class="table_body_text">E-Book Content</p>
+                                            <p class="table_titledetail">Turnaround: &nbsp;&nbsp;&nbsp;6 days</p>
+                                            <p class="table_titledetail">Quality:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premium</p>
+                                            <div class="qty_bar">
+                                                <p class="table_head_text">Date</p>
+                                                <p class="table_head_text">QTY</p>
+                                                <p class="table_head_text">Total</p>
+                                            </div>
+                                            <div class="qty_bar">
+                                                <p class="table_body_text">11.10.2020</p>
+                                                <p class="table_body_text">1</p>
+                                                <p class="table_body_text">£125.00</p>
+                                            </div>
+                                            <button type="button" class="btn order_tablebtn">View order</button>
+                                        </div>
+                                        <div class="add_line"></div>
+                                        <div class="order_cardmob">
+                                            <p class="table_head_text">Order</p>
+                                            <p class="table_body_text">E-Book Content</p>
+                                            <p class="table_titledetail">Turnaround: &nbsp;&nbsp;&nbsp;6 days</p>
+                                            <p class="table_titledetail">Quality:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premium</p>
+                                            <div class="qty_bar">
+                                                <p class="table_head_text">Date</p>
+                                                <p class="table_head_text">QTY</p>
+                                                <p class="table_head_text">Total</p>
+                                            </div>
+                                            <div class="qty_bar">
+                                                <p class="table_body_text">11.10.2020</p>
+                                                <p class="table_body_text">1</p>
+                                                <p class="table_body_text">£125.00</p>
+                                            </div>
+                                            <button type="button" class="btn order_tablebtn">View order</button>
+                                        </div>
+                                        <div class="add_line"></div>
+                                        <div class="order_cardmob">
+                                            <p class="table_head_text">Order</p>
+                                            <p class="table_body_text">E-Book Content</p>
+                                            <p class="table_titledetail">Turnaround: &nbsp;&nbsp;&nbsp;6 days</p>
+                                            <p class="table_titledetail">Quality:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Premium</p>
+                                            <div class="qty_bar">
+                                                <p class="table_head_text">Date</p>
+                                                <p class="table_head_text">QTY</p>
+                                                <p class="table_head_text">Total</p>
+                                            </div>
+                                            <div class="qty_bar">
+                                                <p class="table_body_text">11.10.2020</p>
+                                                <p class="table_body_text">1</p>
+                                                <p class="table_body_text">£125.00</p>
+                                            </div>
+                                            <button type="button" class="btn order_tablebtn">View order</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Addressess -->
+                        <div class="tab-pane tab_data fade" id="v-pills-address" role="tabpanel"
+                            aria-labelledby="v-pills-address-tab">
+                            <div class="address_body w-100">
+                                <div class="address_top">
+                                    <div class="add_titlebar">
+                                        <p class="address_title">Billing Address</p>
+                                        <a><img src="./assest/images/edite_icon.svg"></a>
+                                    </div>
+                                    <div class="add_line"></div>
+                                    <div class="add_contentbar">
+                                        <p class="add_contenttitle">John Smith</p>
+                                        <p class="add_contentsubtitle">64 Thornton St<br>
+                                            HUNTLYWOOD<br>
+                                            MAGDALEN LAVER<br>
+                                            TD4 8AU</p>
+                                    </div>
+                                </div>
+                                <div class="address_bottom">
+                                    <p class="address_title">Previous Addresses</p>
+                                    <div class="add_line"></div>
+                                    <div class="add_contentbar">
+                                        <p class="add_contenttitle">John Smith</p>
+                                        <p class="add_contentsubtitle">64 Thornton St<br>
+                                            HUNTLYWOOD<br>
+                                            MAGDALEN LAVER<br>
+                                            TD4 8AU</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Account -->
+                        <div class="tab-pane tab_data fade" id="v-pills-account" role="tabpanel"
+                            aria-labelledby="v-pills-account-tab">
+                            <div class="account_body">
+                                <h3 class="account_title">Edit your details</h3>
+                                <div class="account_textboxbar">
+                                    <input type="text" class="form-control account_textbox" placeholder="John">
+                                    <input type="text" class="form-control account_textbox" placeholder="Smith">
+                                    <div class="form-group eye_textbar">
+                                        <input type="password" class="form-control account_textbox" placeholder="Old Password" id="oldPassword">
+                                        <img src="./assest/images/eye-open.png" class="eye-icon" onclick="togglePassword('oldPassword', this)">
+                                      </div>
+                                  
+                                      <div class="form-group eye_textbar">
+                                        <input type="password" class="form-control account_textbox" placeholder="New Password" id="newPassword">
+                                        <img src="./assest/images/eye-open.png" class="eye-icon" onclick="togglePassword('newPassword', this)">
+                                      </div>
+                                  
+                                      <div class="form-group eye_textbar">
+                                        <input type="password" class="form-control account_textbox" placeholder="Confirm New Password" id="confirmPassword">
+                                        <img src="./assest/images/eye-open.png" class="eye-icon" onclick="togglePassword('confirmPassword', this)">
+                                      </div>
+
+                                      <button type="button" class="btn account_btn">Save Changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 1 End -->
+
+    <!-- Footer Start -->
+    <footer class="footer position-relative">
+        <img src="./assest/images/footer-bg.png" alt="" class="img-fluid bg-image d-lg-block d-md-block d-none">
+        <img src="./assest/images/Footer-bg-mo.png" alt="" class="img-fluid bg-image d-block d-lg-none d-md-none">
+        <div class="col-gooter">
+            <div class="col">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12 order-lg-0 order-md-1 order-1">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-12 col-lg-4 col-6">
+                                    <div class="footer-menu">
+                                        <h5>Navigation</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="#" rel="noopener noreferrer">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" rel="noopener noreferrer">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" rel="noopener noreferrer">Write For Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" rel="noopener noreferrer">Contact Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" rel="noopener noreferrer">Login/Register</a>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-lg-4 col-6">
+                                    <div class="footer-menu">
+                                        <h5>Navigation</h5>
+                                        <ul>
+                                            <li>
+                                                <a href="#" rel="noopener noreferrer">Terms</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" rel="noopener noreferrer">Privacy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-12 col-lg-4 col-12">
+                                    <div class="footer-contact">
+                                        <h5>Contact</h5>
+                                        <p>contact@scriptera.com </p>
+                                        <p>+44 7647 747 654</p>
+                                        <p>
+                                            123 Main street
+                                            Hackney,  London,  E5 9GH
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                            <div class="footer-lgo">
+                                <div class="mainlogo-footer">
+                                    <a href="#">
+                                        <img src="./assest/images/footer-logo.svg" alt="" class="img-fluid footer-logo">
+                                    </a>
+                                    <div class="social-icon">
+                                        <a href="#">
+                                            <img src="./assest/images/Social-1.svg" alt="" class="img-fluid">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./assest/images/Social.svg" alt="" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div class="copy-right">
+                                        <p>
+                                            Copyright © 2025<br> www. <span>Scriptera</span> .Co
+                                        </p>
+                                        <img src="./assest/images/Mastercard.png" class="img-fluid mstercard-logo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 d-lg-none d-md-block d-block">
+                        <div class="copy-right">
+                            <p>
+                                Copyright © 2025 www. <span>Scriptera</span> .Co
+                            </p>
+                            <img src="./assest/images/Mastercard.png" class="img-fluid mstercard-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assest/js/jquery-3.7.1.min.js"></script>
+    <script src="./assest/js/owl.carousel.js"></script>
+    <script src="./assest/js/popper.min.js"></script>
+    <script src="./assest/js/bootstrap.bundle.min.js"></script>
+    <script src="./assest/js/swiper-bundle.min.js"></script>
+    <script src="./assest/js/aos.js"></script>
+    <script src="./assest/js/uimain.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+
+    <!-- account tab -->
+    <script>
+        function changer(my_num) {
+            var id_one = document.getElementById("id_one");
+            var id_two = document.getElementById("id_two");
+            var id_three = document.getElementById("id_three");
+            var id_four = document.getElementById("id_four");
+
+            if (my_num == 1) {
+                if (id_two.classList.contains("d-block")) id_two.classList.remove("d-block");
+                if (id_three.classList.contains("d-block")) id_three.classList.remove("d-block");
+                if (id_four.classList.contains("d-block")) id_four.classList.remove("d-block");
+
+                id_one.classList.add("d-block");
+
+            } else if (my_num == 2) {
+                if (id_one.classList.contains("d-block")) id_one.classList.remove("d-block");
+                if (id_three.classList.contains("d-block")) id_three.classList.remove("d-block");
+                if (id_four.classList.contains("d-block")) id_four.classList.remove("d-block");
+
+                id_two.classList.add("d-block");
+
+            } else if (my_num == 3) {
+                if (id_one.classList.contains("d-block")) id_one.classList.remove("d-block");
+                if (id_two.classList.contains("d-block")) id_two.classList.remove("d-block");
+                if (id_four.classList.contains("d-block")) id_four.classList.remove("d-block");
+
+                id_three.classList.add("d-block");
+
+            } else if (my_num == 4) {
+                if (id_one.classList.contains("d-block")) id_one.classList.remove("d-block");
+                if (id_two.classList.contains("d-block")) id_two.classList.remove("d-block");
+                if (id_three.classList.contains("d-block")) id_three.classList.remove("d-block");
+
+                id_four.classList.add("d-block");
+
+            } else {
+                console.log("xyz");
+            }
+        }
+    </script>
+
+    <!-- Eye Script -->
+    <script>
+        function togglePassword(fieldId, icon) {
+            const input = document.getElementById(fieldId);
+            const isPassword = input.type === "password";
+            input.type = isPassword ? "text" : "password";
+            icon.src = isPassword ? "./assest/images/eye-closed.png" : "./assest/images/eye-open.png";
+        }
+    </script>
+    <!-- Mobile Tab Script -->
+    <script>
+        function switchTab(targetId) {
+          const tabTrigger = document.querySelector(`[data-bs-target="${targetId}"]`);
+          const tab = new bootstrap.Tab(tabTrigger);
+          tab.show();
+      
+          // Optionally call your changer() function
+          switch (targetId) {
+            case '#v-pills-dashboard':
+              changer(1);
+              break;
+            case '#v-pills-order':
+              changer(2);
+              break;
+            case '#v-pills-address':
+              changer(3);
+              break;
+            case '#v-pills-account':
+              changer(4);
+              break;
+          }
+        }
+      </script>
+      
+
+</body>
+
+</html>
