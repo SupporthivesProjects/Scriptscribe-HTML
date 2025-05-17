@@ -285,6 +285,68 @@ header .navbar{
     top: 5px;
     right: -8px;
 }
+/* ----------------------servieces------------- */
+.ourservies-card{
+    background: url(../images/Our-Services-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: -3rem;
+    z-index: -7;
+    padding-top: 6rem;
+    padding-bottom: 80px;
+    z-index: 1;
+}
+.ourservies-card h1{
+    color: var(--Primary, #172254);
+    text-align: center;
+    font-family: Sen;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -1px;
+    margin-bottom: 27px;
+}
+.card-servies h5{
+    color: var(--Primary, #172254);
+    text-align: center;
+    font-family: Sen;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 0px;
+    margin-bottom: 0px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ourservies-card .card{
+    width: 270px;
+    height: 270px;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 100%;
+    border-radius: 270px;
+    border: 1px solid var(--Neutral-400, #E4E4E4);
+    background: var(--Neutral-White, #FFF);
+    margin-bottom: 20px;
+    transition: all 1s;
+}
+.ourservies-card .card:hover{
+    border: 1px solid var(--Secondary, #3DB1FF);
+    background: var(--Neutral-White, #FFF);
+    box-shadow: 0px 0px 0px 4px rgba(83, 143, 255, 0.25);
+}
+.ourservies-card img {
+    width: 161px;
+    height: 161px;
+    max-width: 100%;
+    margin-top: 43px;
+}
 /* -----------------------home------------------- */
 .home-content-center{
     width: 784px;
@@ -1282,6 +1344,87 @@ header .navbar{
     max-width: 100%;
     margin-left: 111px;
 }
+.our-servies-main {
+    background: url(../images/ser-Hero.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 756px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-servies-main-content h1{
+    color: var(--Neutral-White, #FFF);
+    font-family: Sen;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 74px;
+    /* margin-top: 16px; */
+}
+.our-servies-main-content p{
+    color: var(--P-Light, #B3DCFF);
+    font-family: Sen;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin: 24px 24px;
+}
+.our-servies-main-content h6{
+    width: fit-content;
+    margin-bottom: 16px;
+}
+.our-servies-main-content .btn {
+    color: #FFF;
+    text-align: center;
+    font-family: Sen;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 100px;
+    background: var(--Secondary, #3DB1FF);
+    display: flex;
+    padding: 4px 4px 4px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 363px;
+    text-decoration: none;
+}
+.our-servies-main-content{
+    width: 658px;
+    max-width: 100%;
+    margin-left: 51px;
+}
+.servies-video{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 929px;
+    height: 757px;
+    clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 1;
+}
+.servies-video video{
+    height: 755px;
+    object-fit: cover;
+}
+.our-servies-main::after {
+    content: "";
+    background: url(../images/servi-botm-img.png) no-repeat;
+    background-position: center center;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 46px;
+    width: 100%;
+    z-index: 1;
+}
 /* --------------------footer-------------------- */
 .error-section {
     padding: 64px 0px;
@@ -1812,7 +1955,54 @@ header .navbar{
         margin-top: 4rem;
     }
     
+    .ourservies-card .card {
+        width: 180px;
+        height: 180px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .ourservies-card img {
+        width: 100px;
+        height: 100px;
+        max-width: 100%;
+        margin-top: 30px;
+    }
+    .card-servies h5 {
+        font-size: 12px;
+        height: 38px;
+    }
+    .servies-video {
+       
+        width: 295px;
+        height: 662px;
+       
+    }
+    .our-servies-main {
+        height: 662px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .our-servies-main-content {
+        width: 510px;
+        max-width: 100%;
+        margin-left: 12px;
+    }
+    .our-servies-main::after {
+        width: 100%;
+        z-index: 1;
+        background-size: 100% 100%;
+    }
     
+    .our-servies-main-content h1 {
+        font-size: 48px;
+    }
+    .our-servies-main-content p {
+        color: var(--P-Light, #B3DCFF);
+        font-family: Sen;
+        font-size: 14px;
+        margin: 24px 0px;
+    }
     
 }
 @media only screen and (min-width: 900px) and (max-width:960px) {
@@ -1870,7 +2060,50 @@ header .navbar{
         top: 60px;
         z-index: -1;
     }
+    .ourservies-card .card {
+        width: 190px;
+        height: 190px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .ourservies-card img {
+        width: 90px;
+        height: 90px;
+        max-width: 100%;
+        margin-top: 53px;
+    }
+    .servies-video {
+       
+        width: 508px;
+        height: 662px;
+       
+    }
+    .our-servies-main {
+        height: 662px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .our-servies-main-content {
+        width: 510px;
+        max-width: 100%;
+        margin-left: 12px;
+    }
+    .our-servies-main::after {
+        width: 100%;
+        z-index: 1;
+        background-size: 100% 100%;
+    }
     
+    .our-servies-main-content h1 {
+        font-size: 48px;
+    }
+    .our-servies-main-content p {
+        color: var(--P-Light, #B3DCFF);
+        font-family: Sen;
+        font-size: 14px;
+        margin: 24px 0px;
+    }
     
 }
 @media only screen and (min-width: 900px) and (max-width:999px) {
@@ -2068,7 +2301,50 @@ header .navbar{
         max-width: 100%;
         margin-left: 2px;
     }
+    .ourservies-card .card {
+        width: 190px;
+        height: 190px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .ourservies-card img {
+        width: 90px;
+        height: 90px;
+        max-width: 100%;
+        margin-top: 53px;
+    }
+    .servies-video {
+       
+        width: 508px;
+        height: 662px;
+       
+    }
+    .our-servies-main {
+        height: 662px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .our-servies-main-content {
+        width: 510px;
+        max-width: 100%;
+        margin-left: 12px;
+    }
+    .our-servies-main::after {
+        width: 100%;
+        z-index: 1;
+        background-size: 100% 100%;
+    }
     
+    .our-servies-main-content h1 {
+        font-size: 48px;
+    }
+    .our-servies-main-content p {
+        color: var(--P-Light, #B3DCFF);
+        font-family: Sen;
+        font-size: 14px;
+        margin: 24px 0px;
+    }
 }
 @media only screen and (min-width: 1000px) and (max-width:1080px) {
     .navbar-nav {
@@ -2221,6 +2497,49 @@ header .navbar{
         width: 485px;
         max-width: 100%;
     }
+    .ourservies-card .card {
+        width: 210px;
+        height: 210px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .ourservies-card img {
+        width: 110px;
+        height: 110px;
+        max-width: 100%;
+        margin-top: 53px;
+    }
+    .servies-video {
+       
+        width: 508px;
+        height: 662px;
+       
+    }
+    .our-servies-main {
+        height: 662px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .our-servies-main-content {
+        width: 580px;
+        max-width: 100%;
+        margin-left: 12px;
+    }
+    .our-servies-main::after {
+        width: 100%;
+        z-index: 1;
+        background-size: 100% 100%;
+    }
+    .our-servies-main-content h1 {
+        font-size: 53px;
+    }
+    .our-servies-main-content p {
+        color: var(--P-Light, #B3DCFF);
+        font-family: Sen;
+        font-size: 16px;
+        margin: 24px 0px;
+    }
 }
 @media only screen and (min-width: 1100px) and (max-width:1190px) {
     .navbar-nav {
@@ -2369,6 +2688,40 @@ header .navbar{
     .about-aim-01 {
         margin-top: -3rem;
     }
+    .ourservies-card .card {
+        width: 220px;
+        height: 220px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .ourservies-card img {
+        width: 120px;
+        height: 120px;
+        max-width: 100%;
+        margin-top: 53px;
+    }
+    .servies-video {
+       
+        width: 508px;
+        height: 662px;
+       
+    }
+    .our-servies-main {
+        height: 662px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .our-servies-main-content {
+        width: 643px;
+        max-width: 100%;
+        margin-left: 12px;
+    }
+    .our-servies-main::after {
+        width: 100%;
+        z-index: 1;
+        background-size: 100% 100%;
+    }
 }
 @media only screen and (min-width: 1200px) and (max-width:1290px) {
     .navbar-nav {
@@ -2515,6 +2868,31 @@ header .navbar{
     .about-aim-01 {
         margin-top: -3rem;
     }
+    .ourservies-card .card {
+        width: 240px;
+        height: 240px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .ourservies-card img {
+        width: 135px;
+        height: 135px;
+        max-width: 100%;
+        margin-top: 53px;
+    }
+    .our-servies-main {
+        height: 626px;
+    }
+    .servies-video {
+        width: 547px;
+        height: 626px;
+    }
+    .our-servies-main::after {
+        height: 42px;
+        background-size: 100% 100%;
+        width: 100%;
+        z-index: 1;
+    }
 }
 @media only screen and (min-width: 1300px) and (max-width:1390px) {
     .navbar-nav {
@@ -2643,6 +3021,40 @@ header .navbar{
     .about-aim-01{
         margin-top: -4rem;
     }
+    .ourservies-card .card {
+        width: 240px;
+        height: 240px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .ourservies-card img {
+        width: 135px;
+        height: 135px;
+        max-width: 100%;
+        margin-top: 53px;
+    }
+    .servies-video {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 635px;
+        height: 757px;
+        clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
+        z-index: 1;
+    }
+    .our-servies-main {
+        height: 626px;
+    }
+    .servies-video {
+        width: 547px;
+        height: 626px;
+    }
+    .our-servies-main::after {
+        height: 42px;
+        background-size: 100% 100%;
+        width: 100%;
+        z-index: 1;
+    }
 }
 @media only screen and (min-width: 1400px) and (max-width:1490px) {
     .navbar-nav {
@@ -2750,6 +3162,15 @@ header .navbar{
     }
     .about-aim-01 {
         margin-top: -3rem;
+    }
+    .servies-video {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 635px;
+        height: 757px;
+        clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
+        z-index: 1;
     }
 }
 @media only screen and (min-width: 1500px) and (max-width:1590px) {
