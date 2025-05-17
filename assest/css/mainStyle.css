@@ -291,10 +291,9 @@ header .navbar{
     background-size: cover;
     background-position: center center;
     margin-top: -3rem;
-    z-index: -7;
     padding-top: 6rem;
     padding-bottom: 80px;
-    z-index: 1;
+    z-index: -1;
 }
 .ourservies-card h1{
     color: var(--Primary, #172254);
