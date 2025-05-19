@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./assest/css/aos.css">
     <link rel="stylesheet" href="./assest/css/mainStyle.css">
     <link rel="stylesheet" href="./assest/css/mainResponsive.css">
+    <link rel="stylesheet" href="./assest/css/dhirajstyle.css">
+    <link rel="stylesheet" href="./assest/css/dhirajresponsive.css">
     <style>
         header {
             background: var(--Primary, #172254);
@@ -20,7 +22,6 @@
         .nav-link.active {
             color: #fff !important;
         }
-        
     </style>
 </head>
 
@@ -101,7 +102,132 @@
             </div>
         </nav>
     </header>
-    
+
+    <section class="order_details">
+        <div class="container px-0">
+            <div class="mid_od_box">
+                <div class="d-flex justify-content-between align-items-center w-100 dp_top_box">
+                    <h1 class="od_page-title">My Orders</h1>
+                    <button class="btn btn_bluee">Return to Previous Page</button>
+                </div>
+
+                <!-- Progress -->
+                <div class="od_progress d-flex gap-3 w-100">
+                    <span class="badge od_step od_received">Order Received</span>
+                    <img src="./assest/images/line_arr.svg" alt="" class="blurr d-lg-block d-md-block d-none">
+                    <span class="badge od_step od_received">Request Assessed</span>
+                    <img src="./assest/images/line_arr.svg" alt="" class="blurr d-lg-block d-md-block d-none">
+                    <span class="badge od_step od_underway">Writing Underway</span>
+                    <img src="./assest/images/line_arr.svg" alt="" class="blurr d-lg-block d-md-block d-none">
+                    <span class="badge od_step od_underway">Final Delivery Complete</span>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="row od_order-summary w-100 px-0 mx-auto">
+                    <div class="main_col px-0">
+                        <div class="cont_o_d">
+                            <div class="inn_ooo">
+                                <p> Order No: </p>
+                                <span class="ligght_nn">123456789000</span>
+                            </div>
+                            <div class="inn_ooo">
+                                <p>Order Date </p>
+                                :<span class="ligght_nn">01/01/2025 00:00AM</span>
+                            </div>
+                        </div>
+                        <div class="cont_o_d">
+                            <div class="inn_ooo">
+                                <p>Customer Name: </p>
+                                <span class="ligght_nn">John Smith</span>
+                            </div>
+                            <div class="inn_ooo">
+                                <p>Order Status </p>
+                                :<span class="ligght_nn">Paid</span>
+                            </div>
+                        </div>
+                        <div class="cont_o_d">
+                            <div class="inn_ooo">
+                                <p>Email Address:</p>
+                                <span class="ligght_nn">jsmith@email.com</span>
+                            </div>
+                            <div class="inn_ooo">
+                                <p>Order Amount:</p>
+                                <span class="ligght_nn">$0.00</span>
+                            </div>
+                        </div>
+                        <div class="cont_o_d">
+                            <div class="inn_ooo">
+                                <p>Phone Number:</p>
+                                <span class="ligght_nn">smith@email.com</span>
+                            </div>
+                            <div class="inn_ooo">
+                                <p>Payment Method: </p>
+                                <span class="ligght_nn">Debit/Credit Card</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Request Details Table -->
+                <div class="bluee_diivv w-100 scrollable-content">
+                    <div class="od_section-box">
+                        <h5 class="od_section-title">Details of Your Request</h5>
+                    </div>
+                    <table class="request-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Service Details</th>
+                                <th></th>
+                                <th>Total Duration</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td class="bold">Social Media Content</td>
+                                <td><a href="#" class="view-link">View Details</a></td>
+                                <td>5 Days</td>
+                                <td>$1200</td>
+                            </tr>
+                            <tr>
+                                <td>01</td>
+                                <td class="bold">Social Media Content</td>
+                                <td><a href="#" class="view-link">View Details</a></td>
+                                <td>5 Days</td>
+                                <td>$1200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- Checkout Summary -->
+                <div class="bluee_diivv w-100">
+                    <div class="od_section-box3">
+                        <h5 class="od_section-title">Details of Your Request</h5>
+                    </div>
+                    <div class="lasttt_table">
+                        <div class="inn_ooo">
+                            <p>Subtotal: </p>
+                            <span class="ligght_nn">$00.00</span>
+                        </div>
+                        <div class="inn_ooo">
+                            <p>Tax: </p>
+                            <span class="ligght_nn">$00.00</span>
+                        </div>
+                        <div class="inn_ooo">
+                            <p>Discount: </p>
+                            <span class="ligght_nn">$00.00</span>
+                        </div>
+                        <div class="inn_ooo">
+                            <h4 class="las_bol">Total:</h4>
+                            <span class="ligght_bol">$00.00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <footer class="footer position-relative">
