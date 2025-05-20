@@ -329,6 +329,7 @@
         align-items: center;
         flex-direction: column;
         gap: 21px;
+        width: 100%;
     }
 
     .new_line {
@@ -459,6 +460,8 @@
 
     .vidpo_clip {
         height: 341px;
+        clip-path: polygon(0 0, 100% 23%, 100% 100%, 0% 100%);
+
     }
 
 
@@ -547,6 +550,47 @@
     }
 
 
+    .bluee_light {
+        margin: auto !important;
+    }
+
+    .blue_drop_mob {
+        display: flex;
+        padding: 16px;
+        align-items: center;
+        gap: 13px;
+        border-radius: 1000px;
+        background: var(--Secondary, #3DB1FF);
+        height: 44px;
+    }
+
+    .textttxss {
+        color: var(--Neutral-White, #FFF);
+        text-align: center;
+        font-family: "Sen";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+    }
+    .about_us{
+        background-image: url(../images/about_uss.png);
+    }
+
+.about_us_3{
+    padding: 0px;
+}
+
+.about_us_2{
+    padding: 0px !important;
+}
+
+
+
+
+
     /* Order details main */
     .od_page-title {
         color: var(--Primary, #172254);
@@ -559,106 +603,186 @@
         margin-bottom: 0px;
     }
 
-    .dp_top_box{
+    .dp_top_box {
         flex-direction: column;
         gap: 25px;
     }
 
 
     .mid_od_box {
-    display: flex;
-    max-width: 375px;
-    padding: 24px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 25px;
-    border-radius: 0px;
-    border: 1px solid var(--Neutral-500, #D0D0D0);
-    background: #FFF;
-    margin: auto;
-}
+        display: flex;
+        max-width: 375px;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+        border-radius: 0px;
+        border: 1px solid var(--Neutral-500, #D0D0D0);
+        background: #FFF;
+        margin: auto;
+    }
 
-.cont_o_d {
-    display: flex
-;
-    justify-content: space-between;
-    width: 100%;
-    gap: 16px;
-    flex-direction: column;
-}
+    .cont_o_d {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 16px;
+        flex-direction: column;
+    }
 
-.main_col {
-    display: flex
-;
-    justify-content: space-between;
-    width: 100%;
-    flex-direction: column;
-    gap: 16px;
-}
+    .main_col {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+    }
 
-.od_progress{
-    flex-direction: column;
-    gap: 16px;
-}
+    .od_progress {
+        flex-direction: column;
+        gap: 16px;
+    }
 
-.ligght_nn{
-    font-size: 19px;
-}
+    .ligght_nn {
+        font-size: 19px;
+    }
 
-.scrollable-content {
+    .scrollable-content {
         max-height: 100%;
         overflow-y: auto;
         padding-right: 10px;
     }
 
-.od_section-box{
-    width: 974px;
-}
-.request-table {
-    width: 974px;
-    border-radius: 0px 0px 20px 20px;
-    border: 1px solid var(--Neutral-500, #D0D0D0);
-    background-color: var(--Neutral-White, #FFF);
-    border-collapse: separate;
-}
+    .od_section-box {
+        width: 974px;
+    }
+
+    .request-table {
+        width: 974px;
+        border-radius: 0px 0px 20px 20px;
+        border: 1px solid var(--Neutral-500, #D0D0D0);
+        background-color: var(--Neutral-White, #FFF);
+        border-collapse: separate;
+    }
 
 
-.od_section-title{
-    color: var(--Neutral-White, #FFF);
-font-family: "Sen";
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 30px; /* 150% */
-letter-spacing: -0.55px;
-text-transform: capitalize;
-margin-bottom: 0px;
-}
+    .od_section-title {
+        color: var(--Neutral-White, #FFF);
+        font-family: "Sen";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 30px;
+        /* 150% */
+        letter-spacing: -0.55px;
+        text-transform: capitalize;
+        margin-bottom: 0px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .order_details_select {
+    background-image: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 94px;
+    margin-top: 64px;
 }
 
-@media only screen and (min-device-width: 1200px) and (max-device-width: 1348px) {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1348px) {
+
+    .about_us {
+        padding: 0px;
+        background-image: url(../images/common_bgg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 94px;
+    }
+
+    /* ABOUT US */
+
+    .vidpo_clip {
+        clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+        height: 530px;
+    }
+
+    .innr_top_rgt {
+        display: flex;
+        max-width: 450px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 24px;
+    }
+
+    .white_bold {
+        color: var(--Neutral-White, #FFF);
+        text-align: right;
+        font-family: "Sen";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 45px;
+        margin-bottom: 0px;
+    }
+
+    .vidpo_clip {
+        clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+        height: 410px;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
 
 @media only screen and (min-device-width: 1349px) and (max-device-width: 1439px) {}
 
-@media only screen and (min-device-width: 1440px) and (max-device-width: 1499px) {}
+@media only screen and (min-device-width: 1440px) and (max-device-width: 1499px) {
+
+    /* ABOUT US */
+
+    .vidpo_clip {
+        clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+        height: 530px;
+    }
+
+    .about_us {
+        padding: 0px;
+        background-image: url(../images/common_bgg.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 94px;
+    }
+
+}
 
 @media only screen and (min-device-width: 1500px) and (max-device-width: 1599px) {}
 

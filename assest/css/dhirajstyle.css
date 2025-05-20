@@ -252,7 +252,7 @@
     color: var(--Primary, #172254);
     text-align: right;
     font-family: "Sen";
-    font-size: 38px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 44px;
@@ -520,6 +520,7 @@
     box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.05);
     max-width: 780px;
     padding: 24px;
+    height: 570px;
 }
 
 .custom-table {
@@ -531,11 +532,18 @@
 }
 
 .table-header {
-    padding: 16px;
+    padding: 16px 14px 20px;
     text-align: left;
     background: #fff;
-    color: #002b5c;
-    font-weight: bold;
+    color: var(--Primary, #172254);
+    font-family: "Sen";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 144.444% */
+    letter-spacing: -0.3px;
+    margin-bottom: 0px;
 }
 
 .table-row {
@@ -543,7 +551,7 @@
 }
 
 .table-cell {
-    padding: 16px;
+    padding: 16px 10px;
     vertical-align: top;
     text-align: center;
     color: var(--Primary, #172254);
@@ -558,14 +566,19 @@
 }
 
 .product-cell {
-    padding: 16px;
+    padding: 16px 0px ;
     vertical-align: top;
 }
 
 .product-name {
     font-weight: bold;
-    color: #002b5c;
-    font-size: 16px;
+    color: var(--Primary, #172254);
+    font-family: "Sen";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-transform: uppercase;
     margin-bottom: 6px;
 }
 
@@ -678,7 +691,7 @@
     display: flex;
     justify-content: center;
     gap: 40px;
-    align-items: center;
+    align-items: flex-start;
 }
 
 
@@ -915,6 +928,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+    max-width: 560px;
 }
 
 .bluee_light {
@@ -1350,10 +1364,6 @@ body.od_order-page {
 
 }
 
-
-
-
-
 .request-table th {
     color: var(--Primary, #172254);
     font-family: "Sen";
@@ -1451,4 +1461,25 @@ body.od_order-page {
     letter-spacing: -1px;
     margin-bottom: 0px;
 
+}
+
+.order_details_select {
+    background-image: url(../images/common_bgg.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 94px;
+    margin-top: 64px;
+}
+
+
+.inpi_boxx::placeholder {
+    color: var(--Primary, #172254);
+    font-family: "Sen";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin-bottom: 0px;
 }

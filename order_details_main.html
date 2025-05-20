@@ -108,7 +108,8 @@
             <div class="mid_od_box">
                 <div class="d-flex justify-content-between align-items-center w-100 dp_top_box">
                     <h1 class="od_page-title">My Orders</h1>
-                    <button class="btn btn_bluee">Return to Previous Page</button>
+                    <button class="btn btn_bluee" type="button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Return to Previous Page</button>
                 </div>
 
                 <!-- Progress -->
@@ -222,6 +223,25 @@
                             <h4 class="las_bol">Total:</h4>
                             <span class="ligght_bol">$00.00</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered forget_dailog">
+                <div class="modal-content forget_content">
+                    <div class="modal-body paymet_failed_modal">
+                        <div class="payment_failed_content">
+                            <p class="payment_failed_ttitlr">Payment failed. Please Try again</p>
+                            <p class="subtitle">Something seems to have gone wrong. Please try again.</p>
+                        </div>
+                        <div class="checktext_2">
+                            <button type="button" class="btn btn_sub_brown">Back home</button>
+                            <button type="button" class="btn btn_sub_red">Try again</button>
+                        </div>
+
+
                     </div>
                 </div>
             </div>

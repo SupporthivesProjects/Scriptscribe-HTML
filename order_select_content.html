@@ -98,7 +98,7 @@
             </div>
         </nav>
     </header>
-    <section class="order_details">
+    <section class=".order_details_select">
         <div class="container px-0">
             <div class="order_select_content">
                 <div class="left_osc">
@@ -120,37 +120,38 @@
                                 aria-controls="v-pills-settings" aria-selected="false">Settings</button>
                             <button class="nav-link navv_link" id="v-pills-home-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                                aria-selected="true">Blog Post</button>
+                                aria-selected="true">E-Bookt</button>
                             <button class="nav-link navv_link" id="v-pills-profile-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-profile" type="button" role="tab"
-                                aria-controls="v-pills-profile" aria-selected="false">Article</button>
+                                aria-controls="v-pills-profile" aria-selected="false">Tagline / Slogan</button>
                             <button class="nav-link navv_link" id="v-pills-messages-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-messages" type="button" role="tab"
-                                aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                                aria-controls="v-pills-messages" aria-selected="false">Email / Newsletter</button>
                             <button class="nav-link navv_link" id="v-pills-settings-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                                aria-controls="v-pills-settings" aria-selected="false">Product <br> Description</button>
                             <button class="nav-link navv_link" id="v-pills-home-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                                aria-selected="true">Blog Post</button>
+                                aria-selected="true">Technical Writing</button>
                             <button class="nav-link navv_link" id="v-pills-profile-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-profile" type="button" role="tab"
-                                aria-controls="v-pills-profile" aria-selected="false">Article</button>
+                                aria-controls="v-pills-profile" aria-selected="false">Affliate Marketing</button>
                             <button class="nav-link navv_link" id="v-pills-messages-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-messages" type="button" role="tab"
-                                aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                                aria-controls="v-pills-messages" aria-selected="false">White Paper</button>
                             <button class="nav-link navv_link" id="v-pills-settings-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-settings" type="button" role="tab"
-                                aria-controls="v-pills-settings" aria-selected="false">Settings</button>
+                                aria-controls="v-pills-settings" aria-selected="false">Resum / Cover <br>
+                                Letter</button>
                             <button class="nav-link navv_link " id="v-pills-home-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                                aria-selected="true">Blog Post</button>
+                                aria-selected="true">Creative Writing</button>
                             <button class="nav-link navv_link" id="v-pills-profile-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-profile" type="button" role="tab"
-                                aria-controls="v-pills-profile" aria-selected="false">Article</button>
+                                aria-controls="v-pills-profile" aria-selected="false">Review Writing</button>
                             <button class="nav-link navv_link" id="v-pills-messages-tab" data-bs-toggle="pill"
                                 data-bs-target="#v-pills-messages" type="button" role="tab"
-                                aria-controls="v-pills-messages" aria-selected="false">Messages</button>
+                                aria-controls="v-pills-messages" aria-selected="false">Website Policies</button>
                         </div>
                     </div>
                 </div>
@@ -178,9 +179,9 @@
                                     <div class="secttion">
                                         <label class="product-name">WORD COUNT</label>
                                         <div class="counter">
-                                            <button>−</button>
-                                            <span>0</span>
-                                            <button>+</button>
+                                            <button class="decrement">−</button>
+                                            <span class="count">0</span>
+                                            <button class="increment">+</button>
                                         </div>
                                     </div>
 
@@ -188,9 +189,9 @@
                                     <div class="secttion">
                                         <label class="product-name">QUANTITY</label>
                                         <div class="counter">
-                                            <button>−</button>
-                                            <span>0</span>
-                                            <button>+</button>
+                                            <button class="decrement">−</button>
+                                            <span class="count">0</span>
+                                            <button class="increment">+</button>
                                         </div>
                                     </div>
 
@@ -198,9 +199,9 @@
                                     <div class="secttion">
                                         <label class="product-name">IMAGES</label>
                                         <div class="counter">
-                                            <button>−</button>
-                                            <span>0</span>
-                                            <button>+</button>
+                                            <button class="decrement">−</button>
+                                            <span class="count">0</span>
+                                            <button class="increment">+</button>
                                         </div>
                                     </div>
 
@@ -209,7 +210,7 @@
                                         <label class="product-name">TURNAROUND</label>
                                         <div class="radio-container">
                                             <input type="radio" id="standard-turn" name="turnaround" class="radio"
-                                                checked>
+                                                checked="">
                                             <label for="standard-turn" class="toggle-btn">Standard</label>
 
                                             <input type="radio" id="expert-turn" name="turnaround" class="radio">
@@ -225,7 +226,8 @@
                                                 <input type="radio" id="standard-quality" name="quality" class="radio">
                                                 <label for="standard-quality" class="toggle-btn">Standard</label>
 
-                                                <input type="radio" id="premium" name="quality" class="radio" checked>
+                                                <input type="radio" id="premium" name="quality" class="radio"
+                                                    checked="">
                                                 <label for="premium" class="toggle-btn">Premium</label>
 
                                                 <input type="radio" id="expert-quality" name="quality" class="radio">
@@ -241,21 +243,24 @@
                                             </select>
                                         </div>
                                     </div>
+
                                     <hr class="new_line">
+
                                     <!-- Footer -->
                                     <div class="foottter">
                                         <div class="totaal">
-                                            <p class="bigbold">0 day</p>
-                                            <p class="bigbold">£0.00</p>
+                                            <p class="upper_tittle">0 day</p>
+                                            <p class="upper_tittle">£0.00</p>
                                         </div>
                                         <div class="osc_cart">
-                                            <a class="nav-link btn btn_blue" href="#" style="min-width: 180px;">
-                                                Continue</a>
-                                            <a href="#" class="cont">Add more Content</a>
+                                            <a class="nav-link btn btn_blue" href="#"
+                                                style="min-width: 180px;">Continue</a>
+                                            <a href="#" class="cont">Clear Selection</a>
                                         </div>
                                     </div>
 
                                 </div>
+
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                 aria-labelledby="v-pills-profile-tab" tabindex="0">
@@ -265,9 +270,9 @@
                                     <div class="secttion">
                                         <label class="product-name">WORD COUNT</label>
                                         <div class="counter">
-                                            <button>−</button>
-                                            <span>0</span>
-                                            <button>+</button>
+                                            <button class="decrement">−</button>
+                                            <span class="count">0</span>
+                                            <button class="increment">+</button>
                                         </div>
                                     </div>
 
@@ -275,9 +280,9 @@
                                     <div class="secttion">
                                         <label class="product-name">QUANTITY</label>
                                         <div class="counter">
-                                            <button>−</button>
-                                            <span>0</span>
-                                            <button>+</button>
+                                            <button class="decrement">−</button>
+                                            <span class="count">0</span>
+                                            <button class="increment">+</button>
                                         </div>
                                     </div>
 
@@ -285,9 +290,9 @@
                                     <div class="secttion">
                                         <label class="product-name">IMAGES</label>
                                         <div class="counter">
-                                            <button>−</button>
-                                            <span>0</span>
-                                            <button>+</button>
+                                            <button class="decrement">−</button>
+                                            <span class="count">0</span>
+                                            <button class="increment">+</button>
                                         </div>
                                     </div>
 
@@ -296,7 +301,7 @@
                                         <label class="product-name">TURNAROUND</label>
                                         <div class="radio-container">
                                             <input type="radio" id="standard-turn" name="turnaround" class="radio"
-                                                checked>
+                                                checked="">
                                             <label for="standard-turn" class="toggle-btn">Standard</label>
 
                                             <input type="radio" id="expert-turn" name="turnaround" class="radio">
@@ -312,7 +317,8 @@
                                                 <input type="radio" id="standard-quality" name="quality" class="radio">
                                                 <label for="standard-quality" class="toggle-btn">Standard</label>
 
-                                                <input type="radio" id="premium" name="quality" class="radio" checked>
+                                                <input type="radio" id="premium" name="quality" class="radio"
+                                                    checked="">
                                                 <label for="premium" class="toggle-btn">Premium</label>
 
                                                 <input type="radio" id="expert-quality" name="quality" class="radio">
@@ -328,21 +334,24 @@
                                             </select>
                                         </div>
                                     </div>
+
                                     <hr class="new_line">
+
                                     <!-- Footer -->
                                     <div class="foottter">
                                         <div class="totaal">
-                                            <p class="bigbold">0 day</p>
-                                            <p class="bigbold">£0.00</p>
+                                            <p class="upper_tittle">0 day</p>
+                                            <p class="upper_tittle">£0.00</p>
                                         </div>
                                         <div class="osc_cart">
-                                            <a class="nav-link btn btn_blue" href="#" style="min-width: 180px;">
-                                                Continue</a>
-                                            <a href="#" class="cont">Add more Content</a>
+                                            <a class="nav-link btn btn_blue" href="#"
+                                                style="min-width: 180px;">Continue</a>
+                                            <a href="#" class="cont">Add more</a>
                                         </div>
                                     </div>
 
                                 </div>
+
                             </div>
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                 aria-labelledby="v-pills-messages-tab" tabindex="0">...</div>
@@ -359,9 +368,9 @@
                                 <div class="secttion">
                                     <label class="product-name">WORD COUNT</label>
                                     <div class="counter">
-                                        <button>−</button>
-                                        <span>0</span>
-                                        <button>+</button>
+                                        <button class="decrement">−</button>
+                                        <span class="count">0</span>
+                                        <button class="increment">+</button>
                                     </div>
                                 </div>
 
@@ -369,9 +378,9 @@
                                 <div class="secttion">
                                     <label class="product-name">QUANTITY</label>
                                     <div class="counter">
-                                        <button>−</button>
-                                        <span>0</span>
-                                        <button>+</button>
+                                        <button class="decrement">−</button>
+                                        <span class="count">0</span>
+                                        <button class="increment">+</button>
                                     </div>
                                 </div>
 
@@ -379,9 +388,9 @@
                                 <div class="secttion">
                                     <label class="product-name">IMAGES</label>
                                     <div class="counter">
-                                        <button>−</button>
-                                        <span>0</span>
-                                        <button>+</button>
+                                        <button class="decrement">−</button>
+                                        <span class="count">0</span>
+                                        <button class="increment">+</button>
                                     </div>
                                 </div>
 
@@ -389,7 +398,8 @@
                                 <div class="secttion2">
                                     <label class="product-name">TURNAROUND</label>
                                     <div class="radio-container">
-                                        <input type="radio" id="standard-turn" name="turnaround" class="radio" checked>
+                                        <input type="radio" id="standard-turn" name="turnaround" class="radio"
+                                            checked="">
                                         <label for="standard-turn" class="toggle-btn">Standard</label>
 
                                         <input type="radio" id="expert-turn" name="turnaround" class="radio">
@@ -405,7 +415,7 @@
                                             <input type="radio" id="standard-quality" name="quality" class="radio">
                                             <label for="standard-quality" class="toggle-btn">Standard</label>
 
-                                            <input type="radio" id="premium" name="quality" class="radio" checked>
+                                            <input type="radio" id="premium" name="quality" class="radio" checked="">
                                             <label for="premium" class="toggle-btn">Premium</label>
 
                                             <input type="radio" id="expert-quality" name="quality" class="radio">
@@ -421,21 +431,23 @@
                                         </select>
                                     </div>
                                 </div>
+
                                 <hr class="new_line">
+
                                 <!-- Footer -->
                                 <div class="foottter">
                                     <div class="totaal">
-                                        <p class="bigbold">0 day</p>
-                                        <p class="bigbold">£0.00</p>
+                                        <p class="upper_tittle">0 day</p>
+                                        <p class="upper_tittle">£0.00</p>
                                     </div>
                                     <div class="osc_cart">
-                                        <a class="nav-link btn btn_blue" href="#" style="min-width: 180px;">
-                                            Continue</a>
-                                        <a href="#" class="cont">Add more Content</a>
+                                        <a class="nav-link btn btn_blue" href="#" style="min-width: 180px;">Continue</a>
+                                        <a href="#" class="cont">Clear Selection</a>
                                     </div>
                                 </div>
 
                             </div>
+
                         </div>
                         <div class="tab-content" id="tab-2" style="display:none;">
                             <div class="calculator-container">
@@ -444,9 +456,9 @@
                                 <div class="secttion">
                                     <label class="product-name">WORD COUNT</label>
                                     <div class="counter">
-                                        <button>−</button>
-                                        <span>0</span>
-                                        <button>+</button>
+                                        <button class="decrement">−</button>
+                                        <span class="count">0</span>
+                                        <button class="increment">+</button>
                                     </div>
                                 </div>
 
@@ -454,9 +466,9 @@
                                 <div class="secttion">
                                     <label class="product-name">QUANTITY</label>
                                     <div class="counter">
-                                        <button>−</button>
-                                        <span>0</span>
-                                        <button>+</button>
+                                        <button class="decrement">−</button>
+                                        <span class="count">0</span>
+                                        <button class="increment">+</button>
                                     </div>
                                 </div>
 
@@ -464,9 +476,9 @@
                                 <div class="secttion">
                                     <label class="product-name">IMAGES</label>
                                     <div class="counter">
-                                        <button>−</button>
-                                        <span>0</span>
-                                        <button>+</button>
+                                        <button class="decrement">−</button>
+                                        <span class="count">0</span>
+                                        <button class="increment">+</button>
                                     </div>
                                 </div>
 
@@ -474,7 +486,8 @@
                                 <div class="secttion2">
                                     <label class="product-name">TURNAROUND</label>
                                     <div class="radio-container">
-                                        <input type="radio" id="standard-turn" name="turnaround" class="radio" checked>
+                                        <input type="radio" id="standard-turn" name="turnaround" class="radio"
+                                            checked="">
                                         <label for="standard-turn" class="toggle-btn">Standard</label>
 
                                         <input type="radio" id="expert-turn" name="turnaround" class="radio">
@@ -490,7 +503,7 @@
                                             <input type="radio" id="standard-quality" name="quality" class="radio">
                                             <label for="standard-quality" class="toggle-btn">Standard</label>
 
-                                            <input type="radio" id="premium" name="quality" class="radio" checked>
+                                            <input type="radio" id="premium" name="quality" class="radio" checked="">
                                             <label for="premium" class="toggle-btn">Premium</label>
 
                                             <input type="radio" id="expert-quality" name="quality" class="radio">
@@ -506,21 +519,23 @@
                                         </select>
                                     </div>
                                 </div>
+
                                 <hr class="new_line">
+
                                 <!-- Footer -->
                                 <div class="foottter">
                                     <div class="totaal">
-                                        <p class="bigbold">0 day</p>
-                                        <p class="bigbold">£0.00</p>
+                                        <p class="upper_tittle">0 day</p>
+                                        <p class="upper_tittle">£0.00</p>
                                     </div>
                                     <div class="osc_cart">
-                                        <a class="nav-link btn btn_blue" href="#" style="min-width: 180px;">
-                                            Continue</a>
-                                        <a href="#" class="cont">Add more Content</a>
+                                        <a class="nav-link btn btn_blue" href="#" style="min-width: 180px;">Continue</a>
+                                        <a href="#" class="cont">Clear Selection</a>
                                     </div>
                                 </div>
 
                             </div>
+
                         </div>
                         <div class="tab-content" id="tab-3" style="display:none;">
 
@@ -665,6 +680,30 @@
         });
 
     </script>
+
+    <!-- INCREMENT / DECREMENT -->
+    <script>
+        document.querySelectorAll('.counter').forEach(counter => {
+            const countSpan = counter.querySelector('.count');
+            const incrementBtn = counter.querySelector('.increment');
+            const decrementBtn = counter.querySelector('.decrement');
+
+            let count = 0;
+
+            incrementBtn.addEventListener('click', () => {
+                count++;
+                countSpan.textContent = count;
+            });
+
+            decrementBtn.addEventListener('click', () => {
+                if (count > 0) {
+                    count--;
+                    countSpan.textContent = count;
+                }
+            });
+        });
+    </script>
+
 
 </body>
 
