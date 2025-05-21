@@ -278,7 +278,7 @@
 
 .btn_black {
     display: flex;
-    padding: 16px 24px;
+    padding: 16px 23px;
     justify-content: center;
     align-items: center;
     gap: 13px;
@@ -566,7 +566,7 @@
 }
 
 .product-cell {
-    padding: 16px 0px ;
+    padding: 16px 0px;
     vertical-align: top;
 }
 
@@ -1482,4 +1482,131 @@ body.od_order-page {
     line-height: 28px;
     letter-spacing: -0.4px;
     margin-bottom: 0px;
+}
+
+
+/* Modal */
+
+.forget_dailog {
+    max-width: 772px !important;
+}
+
+
+
+.forget_content {
+    border-radius: 0px !important;
+    border: none !important;
+    background: none !important;
+}
+
+.paymet_failed_modal {
+    display: flex;
+    width: 772px;
+    padding: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border-radius: 20px;
+    border: 2px solid var(--Neutral-500, #D0D0D0);
+    background: var(--Neutral-White, #FFF);
+    box-shadow: 0px 4px 24.6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.payment_failed_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    max-width: 636px;
+}
+
+.payment_failed_ttitlr {
+    color: var(--Primary, #172254);
+    text-align: center;
+    font-family: "Sen";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px;
+    /* 115.789% */
+    margin-bottom: 0px;
+}
+
+.subtitle {
+    color: var(--P, #4A6C9A);
+    text-align: center;
+    font-family: "Sen";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+    letter-spacing: -0.4px;
+    margin-bottom: 0px;
+
+}
+
+.mod_btnn {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+    max-width: 454px;
+}
+
+/* Modal of Social media */
+
+.paymet_failed_modal2 {
+    display: flex;
+    width: 100%;
+    max-width: 728px;
+    padding: 40px 38px;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    border-radius: 20px;
+    border: 2px solid var(--Neutral-500, #D0D0D0);
+    background: var(--Neutral-White, #FFF);
+    box-shadow: 0px 4px 24.6px 0px rgba(0, 0, 0, 0.25);
+}
+
+.payment_failed_content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.subtitle2 {
+    color: var(--P, #4A6C9A);
+    text-align: center;
+    font-family: "Sen";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 140% */
+    letter-spacing: -0.4px;
+    margin-bottom: 0px;
+    max-width: 496px;
+    margin: auto;
+
+}
+
+.midd_modal_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+}
+
+.mod_btnn2{
+width: 100%;
+max-width: 215px;
+}
+
+.forget_dailog2{
+        max-width: 772px !important;
+
 }

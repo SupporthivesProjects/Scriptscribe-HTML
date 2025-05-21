@@ -203,7 +203,7 @@
 
     .rgt_conty {
         display: flex;
-        gap: 16px;
+        gap: 20px;
         max-width: 392px;
         align-items: center;
         flex-direction: column;
@@ -575,17 +575,18 @@
         text-transform: uppercase;
         margin-bottom: 0px;
     }
-    .about_us{
+
+    .about_us {
         background-image: url(../images/about_uss.png);
     }
 
-.about_us_3{
-    padding: 0px;
-}
+    .about_us_3 {
+        padding: 0px;
+    }
 
-.about_us_2{
-    padding: 0px !important;
-}
+    .about_us_2 {
+        padding: 0px !important;
+    }
 
 
 
@@ -680,16 +681,96 @@
     }
 
     .order_details_select {
-    background-image: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 94px;
-    margin-top: 64px;
-}
+        background-image: none;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 94px;
+        margin-top: 64px;
+    }
+
+    .mob_swipe {
+        color: var(--P, #4A6C9A);
+        text-align: center;
+        font-family: "Sen";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 115%;
+        letter-spacing: 0.21px;
+    }
 
 
+    /* MODAL */
 
+    .modal_ss {
+        padding-right: 0px !important;
+    }
+
+    .paymet_failed_modal {
+        display: flex;
+        width: 335px;
+        padding: 40px 19px;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        border-radius: 20px;
+        border: 2px solid var(--Neutral-500, #D0D0D0);
+        background: var(--Neutral-White, #FFF);
+        box-shadow: 0px 4px 24.6px 0px rgba(0, 0, 0, 0.25);
+        margin: auto;
+
+    }
+
+    .payment_failed_ttitlr {
+        color: var(--Primary, #172254);
+        text-align: center;
+        font-family: "Sen";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -1px;
+        margin-bottom: 0px;
+        max-width: 284px !important;
+    }
+
+
+    .mod_btnn {
+        display: flex;
+        gap: 16px;
+        width: 100%;
+        max-width: 454px;
+        flex-direction: column;
+    }
+
+    /* Modal of Social media */
+
+    .paymet_failed_modal2 {
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+        border-radius: 0px;
+        gap: 20px;
+    }
+
+    .forget_dailog2 {
+        margin: 0px !important;
+    }
+
+    .payment_failed_content2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        width: 327px;
+    }
+
+    .mod_btnn2 {
+        max-width: 100%;
+    }
 
 
 

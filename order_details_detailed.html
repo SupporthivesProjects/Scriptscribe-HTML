@@ -180,9 +180,11 @@
                                         <p class="bigbold">£0.00</p>
                                     </div>
                                     <div class="rgt_conty">
-                                        <a class="nav-link btn btn_blue" href="#" style="min-width: 180px;">Add to
+                                        <a class="nav-link btn btn_blue" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal  " href="#" style="min-width: 180px;">Add to
                                             Cart</a>
-                                        <a href="#" class="cont">Change Product Type</a>
+                                        <a href="#" class="cont" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal2">Change Product Type</a>
                                     </div>
                                 </div>
 
@@ -220,8 +222,50 @@
                 </div>
             </div>
         </div>
-    </section>
 
+    </section>
+    <!-- item added to Cart modal  -->
+    <div class="modal fade modal_ss" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered forget_dailog">
+            <div class="modal-content forget_content">
+                <div class="modal-body paymet_failed_modal">
+                    <div class="payment_failed_content">
+                        <p class="payment_failed_ttitlr">*Item* successfully added to cart</p>
+                        <p class="subtitle">The selected service and parameters have been successfully added to cart.
+                            You are able to go directly to the checkout at any point to buy your chosen services.</p>
+                    </div>
+                    <div class="mod_btnn">
+                        <button class="button btn_black "><span class="btn_multi_mo">Continue Shopping</span></button>
+                        <button class="button btn_blue "><span class="btn_multi_mo">
+                                secure Checkout</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error modal  -->
+    <div class="modal fade modal_ss" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered forget_dailog">
+            <div class="modal-content forget_content">
+                <div class="modal-body paymet_failed_modal">
+                    <div class="payment_failed_content">
+                        <p class="payment_failed_ttitlr" style="max-width: 466px;">An error has occurred, please try again</p>
+                        <p class="subtitle">The selected service and parameters have been successfully added to cart.
+                            You are able to go directly to the checkout at any point to buy your chosen services.</p>
+                    </div>
+                    <div class="mod_btnn">
+                        <button class="button btn_black "><span class="btn_multi_mo">Return Home</span></button>
+                        <button class="button btn_blue "><span class="btn_multi_mo">Try again</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <footer class="footer position-relative">
